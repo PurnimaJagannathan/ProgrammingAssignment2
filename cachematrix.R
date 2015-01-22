@@ -18,10 +18,10 @@ makeCacheMatrix <- function(x = matrix())
       m<<-NULL  
     }
   
-  ##Get the value of the matrix
+  ##Gets the value of the matrix
   get<-function() x
   
-  ##Set the value of the matrix inverse
+  ##Sets the value of the matrix inverse
   setmatrix<-function(solve) m<<- solve
   getmatrix<-function() m
   
