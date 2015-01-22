@@ -52,10 +52,11 @@ cacheSolve <- function(x, ...)
     }
   
   ##Else compute the inverse of matrix
-  matrix<-x$get
+  matrix<-x$get()
   m<-solve(matrix, ...)
   
-  ##Set the value of the inverse matrix
+  
+  ##Sets the value of the inverse matrix
   x$setmatrix(m)
   m  
 }
